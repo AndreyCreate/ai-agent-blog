@@ -79,7 +79,8 @@ ul.list li::before{content:"—";position:absolute;left:0;color:var(--gray)}
 .posts-note{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:#3C567A;margin:4px 4px 10px}
 .posts{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 12px;scrollbar-width:none}
 .posts::-webkit-scrollbar{display:none}
-.post{flex:0 0 190px}
+.post{flex:0 0 190px;text-decoration:none;color:inherit}
+.post .pv b{font-weight:600;color:#16283B}
 .post img{width:190px;height:238px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 26px rgba(30,40,60,.18)}
 .post .pv{font-family:var(--mono);font-size:12.5px;color:#2A3B52;margin-top:8px;text-align:center}
 
@@ -139,22 +140,27 @@ footer a{color:#3C567A}
     <h1>Персональный <em>AI-агент</em> для вашего блога</h1>
     <p>До консультации вы проходите два подготовительных урока на CreateToday и собираете основу. Затем на индивидуальной 90-минутной Zoom-консультации мы настраиваем агента в Claude под ваши материалы, стиль и задачи — и вместе создаём первый пост или карусель.</p>
     <p class="price-line"><b>Первые 3 места — 30 000 ₽</b><br><span class="muted">После первых трёх консультаций стоимость будет 50 000 ₽.</span></p>
-    <!-- PLACEHOLDER: ссылка на checkout CreateToday -->
-    <a class="btn" href="#CHECKOUT_URL">Забронировать консультацию за 30 000 ₽</a>
+    <a class="btn" href="https://andreyandreev.createtoday.ru/hero/get/of_avTB4WNjQemO">Забронировать консультацию за 30 000 ₽</a>
     <div class="under-btn">Оплата фиксирует одно из трёх мест. Сразу после оплаты CreateToday пришлёт вам доступ к подготовительным урокам.</div>
     <a class="ask" href="https://t.me/andrey_andreev">Остался вопрос? Написать Андрею</a>
   </section>
 
   <!-- POSTS ROW -->
   <div>
-    <div class="posts-note">( посты моего блога, собранные агентом — с охватами )</div>
+    <div class="posts-note">( посты, собранные AI-агентом — из моего блога )</div>
     <div class="posts">
-      <div class="post"><img src="assets/post_17948061969206737.jpg" alt=""><div class="pv">охват 709 974</div></div>
-      <div class="post"><img src="assets/post_17894886114553050.jpg" alt=""><div class="pv">охват 136 291</div></div>
-      <div class="post"><img src="assets/post_17871609426690856.jpg" alt=""><div class="pv">охват 103 706</div></div>
-      <div class="post"><img src="assets/post_18105803530969594.jpg" alt=""><div class="pv">охват 82 434</div></div>
-      <div class="post"><img src="assets/post_17850217857695977.jpg" alt=""><div class="pv">охват 61 368</div></div>
-      <div class="post"><img src="assets/post_18127927060617956.jpg" alt=""><div class="pv">охват 56 892</div></div>
+      <a class="post" style="flex-basis:240px" href="https://www.instagram.com/p/DbzxYs3jKi6/" target="_blank" rel="noopener">
+        <img style="width:240px;height:300px" src="assets/sel_DbzxYs3jKi6.jpg" alt="">
+        <div class="pv" style="text-align:left;padding:0 2px">пост целиком собран агентом<br><b>охват 11 735 · 722 сохранения<br>подписывается каждый второй, кто открыл профиль</b></div>
+      </a>
+      <a class="post" style="flex-basis:240px" href="https://www.instagram.com/p/Db7iF2SDKSP/" target="_blank" rel="noopener">
+        <img style="width:240px;height:300px" src="assets/sel_Db7iF2SDKSP.jpg" alt="">
+        <div class="pv" style="text-align:left;padding:0 2px">агент <b>сам нашёл видеофрагменты</b> и добавил их в пост</div>
+      </a>
+      <a class="post" style="flex-basis:240px" href="https://www.instagram.com/p/Dbm6vAaDKYg/" target="_blank" rel="noopener">
+        <img style="width:240px;height:300px" src="assets/sel_Dbm6vAaDKYg.jpg" alt="">
+        <div class="pv" style="text-align:left;padding:0 2px">агент <b>сам собрал пост</b> на основании моих продуктов</div>
+      </a>
     </div>
   </div>
 
@@ -258,8 +264,7 @@ footer a{color:#3C567A}
     </div>
     <p class="price-line"><b>Стартовая стоимость: 30 000 ₽</b><br><span class="muted">Первые три подтверждённые оплаты. После них — 50 000 ₽.</span></p>
     <p class="muted">Я запускаю этот формат впервые: первые участники получают полную индивидуальную работу по стартовой цене, а я дорабатываю структуру подготовки на реальных задачах. Оплатить можно полностью или в рассрочку через CreateToday — условия видны в checkout.</p>
-    <!-- PLACEHOLDER: ссылка на checkout CreateToday -->
-    <a class="btn" href="#CHECKOUT_URL">Оплатить 30 000 ₽</a>
+    <a class="btn" href="https://andreyandreev.createtoday.ru/hero/get/of_avTB4WNjQemO">Оплатить 30 000 ₽</a>
     <div class="under-btn">Место фиксируется после подтверждённой оплаты.</div>
     <a class="ask" href="https://t.me/andrey_andreev">Задать вопрос перед оплатой</a>
   </section>
@@ -297,14 +302,13 @@ footer a{color:#3C567A}
     <h2>Соберите систему <em>один раз</em> — чтобы не начинать каждый пост с пустого экрана</h2>
     <p>Сначала вы подготовите основу по двум урокам на CreateToday. Затем на 90-минутной индивидуальной консультации мы настроим агента в Claude под ваш блог и вместе создадим первый материал.</p>
     <p class="price-line"><b>Первые 3 места — 30 000 ₽</b><br><span class="muted">После них стоимость будет 50 000 ₽. Можно оплатить полностью или оформить рассрочку.</span></p>
-    <!-- PLACEHOLDER: ссылка на checkout CreateToday -->
-    <a class="btn" href="#CHECKOUT_URL">Забронировать консультацию за 30 000 ₽</a>
+    <a class="btn" href="https://andreyandreev.createtoday.ru/hero/get/of_avTB4WNjQemO">Забронировать консультацию за 30 000 ₽</a>
     <div class="under-btn">После оплаты CreateToday сразу пришлёт доступ к подготовительным урокам.</div>
     <a class="ask" href="https://t.me/andrey_andreev">Написать Андрею</a>
   </section>
 
   <footer>
-    Поддержка CreateToday: <a href="https://t.me/Create_today_help">t.me/Create_today_help</a><br>
+    Поддержка: <a href="https://t.me/andrey_andreev">t.me/andrey_andreev</a><br>
     <!-- PLACEHOLDER: актуальные ссылки на оферту и политику из checkout CreateToday -->
     <a href="#OFERTA_URL">Публичная оферта</a> · <a href="#POLICY_URL">Политика обработки данных</a>
   </footer>
